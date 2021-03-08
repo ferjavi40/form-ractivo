@@ -2,7 +2,29 @@
     <h1>Contact us</h1>
     <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()" >
     <input type="text" formControlName="name" placeholder="Digite su nombre">
+    <div class="alert-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+        <div class="container-error-message" *ngIf="name.errors.required">
+            Nombre es requerido
+        </div>
+
+        <div class="container-error-message" *ngIf="name.errors.minlength">
+            El nombre tiene que ser de al menos 5 caracteres.
+        </div>
+    </div>
     <input type="text" formControlName="email" placeholder="Digite su Email">
+    <div class="alert-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+        <div class="container-error-message" *ngIf="email.errors.required">
+            Email es requerido
+        </div>
+
+        <div class="container-error-message" *ngIf="name.errors.minlength">
+            El nombre tiene que ser de al menos 5 caracteres.
+        </div>
+
+        <div class="container-error-message" *ngIf="(email.dirty|| email.touched) && email.invalid && email.errors.pattern">
+            El formato de email no es valido.
+        </div>
+    </div>
     <textarea formControlName="message" placeholder="Escriba su mensaje"></textarea>
     <button type="submit" class="btn-send">Send</button>
     </form>
