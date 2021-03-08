@@ -1,6 +1,6 @@
 <div class="form-container">
     <h1>Contact us</h1>
-    <form [formGroup]="contactForm">
+    <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()" >
     <input type="text" formControlName="name" placeholder="Digite su nombre">
     <input type="text" formControlName="email" placeholder="Digite su Email">
     <textarea formControlName="message" placeholder="Escriba su mensaje"></textarea>

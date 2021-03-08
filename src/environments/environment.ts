@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyBhxHxuk0Cz3vR3qss2qcfZA6ymzWChAyg",
-    authDomain: "formularioreactivo-c1986.firebaseapp.com",
-    projectId: "formularioreactivo-c1986",
-    storageBucket: "formularioreactivo-c1986.appspot.com",
-    messagingSenderId: "142412875954",
-    appId: "1:142412875954:web:787006a9e6f3c138f061ab",
-    measurementId: "G-GW2TJTZT8V"
+    apiKey: "AIzaSyBXBbbrkD6K5MOoVngfOqvZVn2D65Sc8sI",
+    authDomain: "formularioreactivo-70d38.firebaseapp.com",
+    projectId: "formularioreactivo-70d38",
+    storageBucket: "formularioreactivo-70d38.appspot.com",
+    messagingSenderId: "152796315086",
+    appId: "1:152796315086:web:b562dc52d2638dcf7abf9f",
+    measurementId: "G-J45V1JFCFF"
   }
 };
 

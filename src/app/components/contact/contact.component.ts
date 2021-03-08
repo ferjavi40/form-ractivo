@@ -15,8 +15,8 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
-  constructor(private _dataService: DataDbService) { 
-    this.contactForm= this.createFormGroup();
+  constructor(private _dataService: DataDbService) {
+    this.contactForm = this.createFormGroup();
   }
 
   ngOnInit(): void {
@@ -35,7 +35,7 @@ export class ContactComponent implements OnInit {
   }
 
   onSaveForm() {
-    console.log('guardado')
+    this._dataService.saveMessage(this.contactForm.value)
   }
 
 }
